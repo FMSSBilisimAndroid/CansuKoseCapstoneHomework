@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <import type="android.view.View" />
+        <variable
+            name="travel"
+            type="com.example.patikacapstoneproject.dto.Travel" />
+    </data>
+
+    <LinearLayout
+        android:padding="5dp"
+        android:layout_width="150dp"
+        android:layout_height="200dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="matrix"
+                android:background="@drawable/rectangle_menu"
+                app:image="@{travel.images.get(0).component4() == null ? @drawable/nusa_penida : travel.images.get(3).component4() }"/>
+
+
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="76dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:text="@{travel.title}"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                tools:text="Title" />
+
+            <TextView
+                android:id="@+id/textViewType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_like"
+                android:layout_marginTop="150dp"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:text="@{travel.country}"
+                android:textAlignment="center"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</layout>

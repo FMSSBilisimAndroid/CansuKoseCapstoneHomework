@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ui.detail.DetailFragment">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="442dp"
+                android:src="@drawable/detail_image" />
+
+            <ImageView
+                android:id="@+id/image6"
+                android:layout_width="348dp"
+                android:layout_height="67dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="-100dp"
+                android:src="@drawable/ic_detail_rectangle" />
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="-55dp"
+                android:src="@drawable/detail_1" />
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="-50dp"
+                android:src="@drawable/detail_2" />
+
+            <ImageView
+                android:id="@+id/image3"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="185dp"
+                android:layout_marginTop="-50dp"
+                android:src="@drawable/detail_3" />
+
+            <ImageView
+                android:id="@+id/image4"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="255dp"
+                android:layout_marginTop="-50dp"
+                android:src="@drawable/detail_4" />
+
+            <ImageView
+                android:id="@+id/image5"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="-50dp"
+                android:layout_marginLeft="320dp"
+                android:src="@drawable/detail_5" />
+
+
+            <TextView
+                style="@style/DetailTitle"
+                android:id="@+id/textView13"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="70dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nusa Pedina" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_location" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_marginLeft="350dp"
+                android:layout_marginTop="-74dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_like" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="25dp"
+                style="@style/DetailSubTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bali, Indonesia" />
+
+            <TextView
+                android:id="@+id/textView11"
+                style="@style/Detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est vel odio elementum non id venenatis, elementum. Enim augue velit tristique eu viverra. Massa.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est vel odio elementum non id venenatis, elementum. Enim augue velit tristique eu viverra. Massa." />
+
+            <Button
+                android:id="@+id/button"
+                style="@style/Categories"
+                android:layout_width="309dp"
+                android:layout_height="54dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:backgroundTint="#FF4760"
+                android:text="Add Bookmark"
+                android:textAllCaps="false" />
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
