@@ -5,10 +5,10 @@
 </p>
 
 
--BottomNavigationView 
--Recylerview in
--Single activity multi fragment
--Retrofit.
--MVVM architecture, DataBinding, ViewModel, LiveData.
--Coroutines
--Shared Preferences
+- BottomNavigationView 
+- Recylerview in
+- Single activity multi fragment
+- Retrofit
+- MVVM architecture, DataBinding, ViewModel, LiveData.
+- Coroutines
+- Shared Preferences
